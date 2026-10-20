@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10110f">
+  <title>Prince.exe — A Work in Progress</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="reading-progress" id="readingProgress" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Back to top"><span class="brand-symbol">P<span>+</span></span><span class="brand-name">PRINCE.EXE <small>PERSONAL FILE / 001</small></span></a>
+    <nav aria-label="Main navigation"><a href="#story">ABOUT</a><a href="#interests">SIDE QUESTS</a><a href="#toolkit">SKILL TREE</a></nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Switch to light theme" title="Change theme"><span id="themeIcon">☼</span></button>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy reveal">
+        <div class="status-line"><span class="status-dot"></span> PROFILE LOADED <span class="status-divider">/</span> STILL UPDATING</div>
+        <p class="hero-kicker">HELLO, INTERNET STRANGER.</p>
+        <h1>I'm Prince.<br><span class="outline-word">Still</span> <span class="acid-word">loading.</span></h1>
+        <p class="hero-intro">BSIT student. Gamer. Music enjoyer. Occasional trail explorer. I don't have everything figured out, but I have a lot of things I want to try.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#interests">Explore my side quests <span>↘</span></a><button class="button button-quiet" id="surpriseBtn"><span class="button-spark">✳</span> Hit me with a random thought</button></div>
+        <div class="hero-foot"><span>SCROLL IF YOU'RE CURIOUS</span><span class="hero-foot-line"></span><span>01 — 04</span></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="visual-label label-top"><span>SUBJECT_001</span><span>CEBU, PH</span></div>
+        <div class="photo-frame"><div class="photo-corner corner-one"></div><div class="photo-corner corner-two"></div><img src="my-photo.jpg" alt="Portrait of Prince Laurence"><div class="photo-wash"></div><div class="photo-stamp">NOT<br>FINAL.</div><div class="photo-caption"><span>PRINCE LAURENCE</span><strong>WORK IN<br>PROGRESS<span class="acid-word">_</span></strong></div></div>
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="float-chip chip-top"><span class="chip-icon">✳</span><span>Current mission<strong>Learn. Build. Repeat.</strong></span></div>
+        <div class="float-chip chip-bottom"><span class="chip-pulse"></span><span>STATUS<strong>Playable, not complete</strong></span></div>
+        <div class="visual-index">FIG. 01 <span>— A HUMAN, APPARENTLY</span></div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-label="Personal motto"><div class="ticker-track"><span>STAY CURIOUS</span><b>✳</b><span>MAKE MISTAKES</span><b>✳</b><span>KEEP GOING</span><b>✳</b><span>STAY CURIOUS</span><b>✳</b><span>MAKE MISTAKES</span><b>✳</b><span>KEEP GOING</span><b>✳</b></div></div>
+
+    <section class="story section-wrap section-pad" id="story">
+      <div class="section-top reveal"><p class="eyebrow">01 / CHARACTER PROFILE</p><span class="section-side-note">NO LORE DUMP. PROMISE.</span></div>
+      <div class="story-grid">
+        <div class="story-main reveal"><h2>Quiet at first.<br><span class="muted-word">More going on</span><br>than it looks.</h2><p class="story-lead">I'm not usually the loudest person in the room. Give me something I'm interested in, though, and I'll have plenty to explore.</p><p class="story-body">I'm studying BS Information Technology and learning how to turn ideas into things people can actually use. Web development caught my interest because there's something satisfying about making a blank page become a real thing.</p><p class="story-body">When I'm not doing school stuff, you'll probably find me gaming, listening to music, reading manga, or thinking about where to ride or hike next. I like stories, technology, and finding new places without needing a big reason to go.</p><div class="signature">Anyway, that's the short version. <span>— P.</span></div></div>
+        <div class="profile-panel reveal"><div class="panel-head"><span>PLAYER CARD</span><span class="live-mark">● ONLINE</span></div><div class="profile-name">PRINCE L. MAGBANUA</div><div class="profile-sub">REAL PERSON / NOT AN NPC</div><div class="profile-divider"></div><div class="profile-row"><span>BASE LOCATION</span><strong>Cebu City, Philippines</strong></div><div class="profile-row"><span>CURRENT CLASS</span><strong>BS Information Technology</strong></div><div class="profile-row"><span>DEFAULT MODE</span><strong>Quiet until comfortable</strong></div><div class="profile-row"><span>LONG-TERM QUEST</span><strong>Earn well. Live comfortably.</strong></div><div class="profile-tags"><span>GAMING</span><span>MUSIC</span><span>TECH</span><span>OUTDOORS</span></div><div class="profile-bottom"><span>AGE</span><strong>20</strong><span class="profile-xp">XP: IN PROGRESS</span></div></div>
+      </div>
+    </section>
+
+    <section class="interests section-wrap section-pad" id="interests">
+      <div class="section-top reveal"><p class="eyebrow">02 / OPTIONAL SIDE QUESTS</p><span class="section-side-note">CLICK ONE. I'M NOT YOUR BOSS.</span></div>
+      <div class="interest-heading reveal"><h2>Pick a rabbit hole<span class="acid-word">.</span></h2><p>These are the things that get my attention when I'm not staring at a screen for school. Click a card; there's extra info inside.</p></div>
+      <div class="interest-grid">
+        <button class="interest-card card-game reveal" data-title="Gaming" data-number="SIDE QUEST 01" data-detail="I like getting pulled into game worlds, learning their systems, and getting better at them. Sometimes it's the challenge; sometimes I just want to explore and see what happens. Either way, 'one more game' is a dangerous sentence."><span class="card-top"><span>01 / PLAY</span><span class="card-arrow">↗</span></span><span class="card-art art-game">✳<i>PRESS START</i></span><span class="card-title">Gaming</span><span class="card-desc">One more round. Famous last words.</span><span class="card-open">OPEN QUEST <b>↗</b></span></button>
+        <button class="interest-card card-music reveal" data-title="Music" data-number="SIDE QUEST 02" data-detail="Music makes ordinary moments feel like scenes from a movie. I especially enjoy songs and musicals that tell a story, build emotion, and make you want to replay a part just to feel it again."><span class="card-top"><span>02 / LISTEN</span><span class="card-arrow">↗</span></span><span class="card-art art-music">♫<i>NOW PLAYING: LIFE</i></span><span class="card-title">Music</span><span class="card-desc">Main-character soundtrack, no budget.</span><span class="card-open">OPEN QUEST <b>↗</b></span></button>
+        <button class="interest-card card-tech reveal" data-title="Technology" data-number="SIDE QUEST 03" data-detail="I'm studying IT and building my coding skills one project at a time. I like figuring out how things work and seeing a design become something interactive. I'm still learning, but that's kind of the point."><span class="card-top"><span>03 / BUILD</span><span class="card-arrow">↗</span></span><span class="card-art art-tech">&lt;/&gt;<i>BUILD MODE: ON</i></span><span class="card-title">Technology</span><span class="card-desc">Turning 'what if?' into something real.</span><span class="card-open">OPEN QUEST <b>↗</b></span></button>
+        <button class="interest-card card-trail reveal" data-title="Manga & Trails" data-number="SIDE QUEST 04" data-detail="I enjoy getting into a good manga and getting outside to explore trails or new places. They're different kinds of escape: one lets me step into someone else's story, the other lets me make a few memories of my own."><span class="card-top"><span>04 / EXPLORE</span><span class="card-arrow">↗</span></span><span class="card-art art-trail">↟<i>TAKE THE LONG WAY</i></span><span class="card-title">Manga & trails</span><span class="card-desc">Fictional worlds and actual fresh air.</span><span class="card-open">OPEN QUEST <b>↗</b></span></button>
+      </div>
+      <div class="quest-status reveal"><div class="quest-status-left"><span class="quest-status-icon">✦</span><div><strong id="questStatusTitle">Side quests available</strong><span id="questStatusText">Open a card to learn more about me.</span></div></div><div class="quest-progress"><div class="quest-progress-label"><span>PROFILE EXPLORED</span><strong id="questCount">0 / 4</strong></div><div class="quest-track"><span id="questBar"></span></div></div></div>
+    </section>
+
+    <section class="toolkit section-wrap section-pad" id="toolkit">
+      <div class="section-top reveal"><p class="eyebrow">03 / SKILL TREE</p><span class="section-side-note">PATCH NOTES: STILL LEARNING</span></div>
+      <div class="skills-layout"><div class="skills-main reveal"><h2>Not max level.<br><span class="muted-word">Not staying level one.</span></h2><p class="skills-intro">A few things I'm working on. The bars are just my own rough estimates, not official ratings.</p><div class="skills-list"><div class="skill-row"><div class="skill-label"><span>Coding</span><span>ADEQUATE / IMPROVING</span></div><div class="skill-track"><span style="--level:78%"></span></div></div><div class="skill-row"><div class="skill-label"><span>Web development</span><span>IN PROGRESS</span></div><div class="skill-track"><span style="--level:56%"></span></div></div><div class="skill-row"><div class="skill-label"><span>Gaming skills</span><span>PERSONAL STRENGTH</span></div><div class="skill-track"><span style="--level:72%"></span></div></div><div class="skill-row"><div class="skill-label"><span>Learning new skills</span><span>WORK IN PROGRESS</span></div><div class="skill-track"><span style="--level:63%"></span></div></div></div></div><div class="skill-aside reveal"><div class="aside-stamp">CURRENT<br>BUILD <span>↗</span></div><div class="quote-mark">“</div><p>I don't need to know everything yet. I just need to keep learning.</p><div class="quote-credit">NOTE TO FUTURE ME</div><div class="aside-footer"><span>VERSION 20.26</span><span>NO FINAL FORM YET</span></div></div></div>
+    </section>
+
+    <section class="closing section-wrap reveal" id="yourturn"><div class="closing-top"><p class="eyebrow">04 / QUICK PERSONALITY CHECK</p><span class="section-side-note">YOUR TURN NOW</span></div><div class="closing-grid"><div><h2>What's your<br><span class="acid-word">current vibe?</span></h2><p class="closing-copy">Pick one. I won't judge. Probably.</p></div><div class="vibe-area"><div class="vibe-picker" role="group" aria-label="Choose your vibe"><button data-vibe="Curious" aria-pressed="false">✦ Curious</button><button data-vibe="Creative" aria-pressed="false">✳ Creative</button><button data-vibe="Focused" aria-pressed="false">◎ Focused</button><button data-vibe="Unpredictable" aria-pressed="false">⌁ Unpredictable</button></div><div class="vibe-result-wrap"><span class="result-spark">↳</span><p class="vibe-result" id="vibeResult" aria-live="polite">Choose a vibe to reveal your totally unofficial result.</p></div></div></div><div class="closing-bottom"><span>THANKS FOR WANDERING AROUND</span><span>IF YOU'RE STILL HERE, YOU'RE PRETTY CURIOUS.</span><a href="#home">RESTART THE LORE ↑</a></div></section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-symbol">P<span>+</span></span><span class="brand-name">PRINCE.EXE <small>PERSONAL FILE / 001</small></span></a><span>MADE BY ME, STILL A WORK IN PROGRESS.</span><a href="#home">BACK TO TOP ↑</a></footer>
+
+  <dialog id="interestDialog" class="interest-dialog"><div class="dialog-top"><span id="dialogNumber">SIDE QUEST 01</span><button class="dialog-close" id="dialogClose" aria-label="Close details">×</button></div><div class="dialog-glyph" id="dialogGlyph">✳</div><p class="eyebrow">A LITTLE MORE LORE</p><h2 id="dialogTitle">Interest</h2><p id="dialogDetail"></p><button class="button button-primary" id="dialogDone">Quest logged <span>✓</span></button></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
